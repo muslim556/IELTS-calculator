@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IELTS Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="./british-council.png" alt="" />
+      <img src="./idp.png" alt="" />
+      <img src="./Screenshot_20.png" alt="" />
+    </nav>
+    <div id="root">
+      <h1 id="calculate">Calculate your IELTS Score!</h1>
+      <div id="card-container">
+        <h2 style="color: #444444">Calculate your General IELTS Score</h2>
+        <h3 style="color: #444444">
+          Enter your possible scores for each part of the exam, get the estimate
+          overall score.
+        </h3>
+        <div>
+          <input type="text" placeholder="Name" id="name" autocomplete="off" />
+          <input
+            type="text"
+            placeholder="Surname"
+            id="surname"
+            autocomplete="off"
+          />
+        </div>
+        <div id="mini-cards">
+          <h3>Speaking</h3>
+          <input type="number" autocomplete="off" id="speaking" n />
+        </div>
+        <div id="mini-cards">
+          <h3>Writing</h3>
+          <input type="number" autocomplete="off" id="writing" />
+        </div>
+        <div id="mini-cards">
+          <h3>Listening</h3>
+          <input type="number" autocomplete="off" id="listening" />
+        </div>
+        <div id="mini-cards">
+          <h3>Reading</h3>
+          <input type="number" autocomplete="off" id="reading" />
+        </div>
+        <div id="score-card">
+          <h3>Expected Score</h3>
+          <p id="score"></p>
+        </div>
+        <input type="submit" value="Calculate Score" id="submit" />
+      </div>
+      <div id="card-container2">
+        <h2 style="color: #444444">
+          Calculate your Listening and Reading score
+        </h2>
+        <h3 style="color: #444444">
+          Please enter possible number of correct answers for Listening and
+          Reading parts of the exam, get the estimate overall score.
+        </h3>
+        <div id="mini-card-for_listening">
+          <h3>Listening</h3>
+          <input type="number" autocomplete="off" id="listening_inp" />
+          <h3>Listening score</h3>
+          <p id="listening-score"></p>
+        </div>
+        <div id="mini-card-for_reading">
+          <h3>Reading</h3>
+          <input type="number" autocomplete="off" id="reading_inp" />
+          <h3>Reading score</h3>
+          <p id="reading-score"></p>
+        </div>
+        <input type="submit" value="Calculate Score" id="submit2" />
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
